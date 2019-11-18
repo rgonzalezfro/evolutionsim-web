@@ -1,4 +1,12 @@
 <header>
-  <mat-toolbar>{{title}}</mat-toolbar>
+  <mat-toolbar>
+    <a mat-button routerLink="/" class="title">{{title}}</a>
+    <div class="link-container">
+      <a mat-button routerLink="/create">Crear</a>
+      <a mat-button routerLink="/records">Registros</a>
+    </div>
+  </mat-toolbar>
 </header>
-<router-outlet></router-outlet>
+<main>
+  <router-outlet></router-outlet>
+</main>

@@ -14,6 +14,7 @@ export class DashboardCardComponent implements OnInit {
   subtitle: string;
   description: string;
   action: string;
+  link: string;
 
   constructor() { }
 
@@ -23,6 +24,7 @@ export class DashboardCardComponent implements OnInit {
       this.subtitle = this.cardDetail.Subtitle;
       this.description = this.cardDetail.Description;
       this.action = this.cardDetail.Action;
+      this.link = this.cardDetail.Link;
     }
   }
 

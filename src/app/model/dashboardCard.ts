@@ -3,4 +3,5 @@ export class DashboadCard {
     Subtitle: string;
     Description: string;
     Action: string;
+    Link: string;
 }

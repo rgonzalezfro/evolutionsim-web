@@ -1,0 +1,31 @@
+<h1>Nueva simulación</h1>
+<h2>Parámetros</h2>
+
+<form action="">
+    <mat-form-field>
+        <label for="unidadEnergia"></label>
+        <input matInput placeholder="Unidades de energía" id="unidadEnergia">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Masa corporal">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Alimentación</mat-label>
+        <mat-select [(value)]="selected">
+            <mat-option *ngFor="let alim of alimentacion" [value]="alim.value">
+                {{alim.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Velocidad máxima">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Edad máxima">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Edad reproductiva">
+    </mat-form-field>
+    <mat-checkbox formControlName="hideRequired">Finalizar en estancamiento</mat-checkbox>
+    <button mat-flat-button color="primary" routerLink=".">Simular</button>
+</form>

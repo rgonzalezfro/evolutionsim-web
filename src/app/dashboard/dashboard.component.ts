@@ -21,13 +21,15 @@ export class DashboardComponent implements OnInit {
       Title: 'Nueva simulación',
       Subtitle: 'Crea una nueva simulación',
       Description: 'Selecciona parámetros y simula la evolución de una especie en civilización.      ',
-      Action: 'Crear'
+      Action: 'Crear',
+      Link:'/create'
     },
     {
       Title: 'Registro de simulaciones',
       Subtitle: 'Ver registro de simulaciones',
       Description: 'Ver la lista de simulaciones terminadas',
-      Action: 'Ver'
+      Action: 'Ver',
+      Link:'/records'
     });
   }
 }
