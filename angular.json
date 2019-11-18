@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Civilization": {
+    "evolution": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Civilization",
+            "outputPath": "dist/evolution",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Civilization:build"
+            "browserTarget": "evolution:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Civilization:build:production"
+              "browserTarget": "evolution:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Civilization:build"
+            "browserTarget": "evolution:build"
           }
         },
         "test": {
@@ -117,16 +117,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Civilization:serve"
+            "devServerTarget": "evolution:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Civilization:serve:production"
+              "devServerTarget": "evolution:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Civilization"
+  "defaultProject": "evolution"
 }
