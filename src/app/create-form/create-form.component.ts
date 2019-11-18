@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 export interface Alimentacion {
-  value: string;
+  value: number;
   viewValue: string;
 }
 
@@ -12,10 +12,12 @@ export interface Alimentacion {
 })
 export class CreateFormComponent implements OnInit {
 
+  selected: number;
+
   alimentacion: Alimentacion[] = [
-    {value: 'omn', viewValue: 'Omnívoro'},
-    {value: 'crn', viewValue: 'Carnívoro'},
-    {value: 'hrv', viewValue: 'Hervívoro'}
+    {value: 0, viewValue: 'Omnívoro'},
+    {value: 1, viewValue: 'Carnívoro'},
+    {value: 2, viewValue: 'Hervívoro'}
   ];
 
   constructor() { }
